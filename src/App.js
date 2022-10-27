@@ -24,7 +24,7 @@ function App() {
   return <Router>
     
 <nav className="cont">
-  <Link to="https://marinawittich.github.io/Merio-e-commmerce-store/" className='homeLink'>Merio</Link>
+  <Link to="/Merio-e-commmerce-store/" className='homeLink'>Merio</Link>
   <Link to="/cartItem" className='cart'>Cart</Link>
   <Link to="/about" className='link'>About</Link>
   <Link to="/shop" className='link'>Shop</Link>
@@ -33,7 +33,7 @@ function App() {
 
 <Routes>
   <Route path="/about" element={<About/>}/>
-  <Route path="https://marinawittich.github.io/Merio-e-commmerce-store/" element={<Home/>}/>
+  <Route path="/Merio-e-commmerce-store/" element={<Home/>}/>
   <Route path="/shop" element={<Shop/>}/>
   <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
 </Routes>
