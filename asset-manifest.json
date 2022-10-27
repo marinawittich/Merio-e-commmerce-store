@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Merio-e-commmerce-store/static/css/main.8b2a1278.css",
-    "main.js": "/Merio-e-commmerce-store/static/js/main.129946fb.js",
+    "main.js": "/Merio-e-commmerce-store/static/js/main.72e91d83.js",
     "index.html": "/Merio-e-commmerce-store/index.html",
     "main.8b2a1278.css.map": "/Merio-e-commmerce-store/static/css/main.8b2a1278.css.map",
-    "main.129946fb.js.map": "/Merio-e-commmerce-store/static/js/main.129946fb.js.map"
+    "main.72e91d83.js.map": "/Merio-e-commmerce-store/static/js/main.72e91d83.js.map"
   },
   "entrypoints": [
     "static/css/main.8b2a1278.css",
-    "static/js/main.129946fb.js"
+    "static/js/main.72e91d83.js"
   ]
 }
