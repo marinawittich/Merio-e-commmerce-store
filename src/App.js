@@ -33,7 +33,7 @@ function App() {
 
 <Routes>
   <Route path="/about" element={<About/>}/>
-  <Route path="/Merio-e-commmerce-store/" element={<Home/>}/>
+  <Route path="/" element={<Home/>}/>
   <Route path="/shop" element={<Shop/>}/>
   <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
 </Routes>
