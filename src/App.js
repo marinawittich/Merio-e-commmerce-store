@@ -24,7 +24,7 @@ function App() {
   return <Router>
     
 <nav className="cont">
-  <Link to="https://marinawittich.github.io/Merio-e-commmerce-store/" className='homeLink'>Merio</Link>
+  <Link to="/Merio-e-commmerce-store/" className='homeLink'>Merio</Link>
   <Link to="/cartItem" className='cart'>Cart</Link>
   <Link to="/about" className='link'>About</Link>
   <Link to="/shop" className='link'>Shop</Link>
