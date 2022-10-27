@@ -1,38 +1,648 @@
-.App {
-  text-align: center;
+.announsment{
+  background-color: #0e8b8d;
+  display: flex;
+  justify-content: center;
+}
+.text{
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  letter-spacing: 3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* navbar */
+.cont{
+  display: flex;
+  justify-content: flex-end;
+}
+.homeLink{
+  font-family: 'Passions Conflict', cursive;
+  font-size: 70px;
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+.link{
+  margin-right: 50px;
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Nanum Gothic', sans-serif;
+  align-self: center;
+}
+/* slides */
+.slideContainer{
+  background-color:#f8fbff;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+}
+.slide{
+  
+}
+.slideInfo{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+h1{
+  font-size: 130px;
+  letter-spacing: 25px;
+}
+h3{
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+.btn, .btnCategory{
+  font-size: 30px;
+  letter-spacing: 5px;
+  background-color:#f8fbff;
+  padding: 15px;
+  border:1px solid black;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: black;
+  color: white;
+}
+.btnCategory:hover{
+  background-color: black;
+  color: white;
+}
+.slideBtn{
+  opacity: 0.3;
+  border: none;
+  background-color:#f8fbff;
+}
+.next{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  cursor: pointer;
+}
+.previous{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* category */
+.categoryCont{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 40px;
+margin-bottom: 40px;
+ 
+}
+.categoryContainer{
+  margin:5px;
+  height: 50vh;
+  position: relative;
+}
+.categoryImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.categoryInfo{
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.categoryTitle{
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  text-decoration:overline;
+  margin: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* newsletter */
+.newscontainer{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+}
+.newsHeader{
+  color: #0e8b8d;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 100px;
+  font-weight: 900; 
+  letter-spacing: 7px;
+}
+.newsInput{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 30px;
+  font-weight: 500; 
+  letter-spacing: 7px;
+}
+.inputContainer{
+  display: flex;
+  margin-bottom: 40px;
+}
+input{
+  padding: 15px;
+  width: 500px;
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.sentEmail{
+  background-color: #0e8b8d;
+  border: none
+}
+/* footer */
+.footerContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  border-top: 1px solid;
+}
+.footerCont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 15px;
+}
+.footertitle{
+  font-size: 30px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 900; 
+  letter-spacing: 7px;
+}
+.footerContact{
+  display: flex;
+}
+.footerText{
+  margin-left: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.footerLink{
+  margin-right: 10px;
+}
+.footerProducts{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+/* products */
+.productsCont{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 15%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.productName{
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 900;
+  color: #0e8b8d; 
+}
+.price{
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.cart{
+  display:none;
+}
+.cartBtn{
+  font-size: 15px;
+  letter-spacing: 5px;
+  background-color:#f8fbff;
+  padding: 10px;
+  border:1px solid black;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.cartBtn:hover{
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.productBtn{
+  border: none;
+  background-color: white;
+}
+.productAbout{
+  font-family: 'Nanum Gothic', sans-serif;
+  width: 390px;
+  margin-left: 50px;
+}
+.bold{
+  color:#0e8b8d;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.showMore{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+  border: none;
+  text-decoration: underline;
+}
+.showMore:hover{
+  color:#0e8b8d;
+}
+.quantityBtn1, .quantityBtn2{
+  background-color: #0e8b8d;
+  border: none;
+  padding:5px;
+  color: white;
+  font-weight: 900;
+  width: 30px;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.quantityBtn1{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.quantityBtn2{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.quantitySpan{
+  padding: 7px;
+  font-size: 15px;
+
+}
+.quantityCount{
+  border-bottom: 1px solid #0e8b8d;
+  border-top: 1px solid #0e8b8d;
+  border-radius: 10px;
+}
+
+
+/* buttons */
+
+.filter{
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 30px;
+  border: none;
+  background-color: white;
+}
+.filter:hover{
+  color: #0e8b8d;
+}
+.category{
+  display: flex;
+  justify-content: center;
+}
+.all{
+align-items: flex-start;
+}
+/* about */
+.aboutCont{
+  display: flex;
+  width: 1400px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.aboutContainer{
+  flex:2;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.aboutImg{
+  width: 100%;
+}
+.aboutTitle{
+  color:#0e8b8d;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin-top: 15px;
+}
+.aboutText{
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 35px;
+  letter-spacing: 2px;
+}
+.down{
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+.count{
+  background-color: #0e8b8d;
+  border-radius: 50%;
+  padding: 5px;
   }
-  to {
-    transform: rotate(360deg);
+  .selectedCategory{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 30px;
+    border: none;
+    background-color: white;
+    color: #D61C4E;
   }
+  .notSelectedCategory{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 30px;
+    border: none;
+    background-color: white;
+    
+  }
+  .notSelectedCategory:hover{
+    color:#0e8b8d;
+  }
+  
+  /* Shopping Cart */
+  .cartCont{
+    display: flex;
+    margin: auto;
+    border-bottom: 1px solid #0e8b8d;
+    
+    margin-bottom: 10px;
+    width: 350px;
+  }
+  .cartContainer{
+    margin: auto;
+    padding: 20px;
+  }
+  .cartPosition{
+    display: flex;
+    
+  }
+  .cartInfo{
+    margin-left: 20px;
+  }
+  .shoppingCart{
+    display: flex;
+    flex-direction: column;
+  }
+  .totalPrice{
+    margin: auto;
+    color:#0e8b8d;
+    font-size: 25px;
+  }
+ 
+@media all and (max-width:1600px){
+  .slide{
+  width: 80%;
+  }
+  h1{
+    font-size: 60px;
+    letter-spacing: 15px;
+  }
+  h3{
+    font-size: 40px;
+    letter-spacing: 6px;
+  }
+  .slideInfo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .btn, .btnCategory{
+    font-size: 20px;
+    padding: 15px;
+  }
+  .categoryTitle{
+    font-size: 30px;
+    margin: 0px;
+  }
+  .newsHeader{
+    font-size: 60px;
+  }
+  .footertitle{
+    font-size: 20px;
+  }
+  .product-card {
+    padding: 0%;
+    flex-grow: 0;
+    flex-basis: 0%;
+  }
+  
+  .productImg{
+    margin: 10px;
+  }
+}
+
+@media all and (max-width:768px){
+  
+  .text{
+    font-size: 15px;
+  } 
+  .slide{
+    width: 60%;
+    }
+    h1{
+      font-size: 50px;
+      letter-spacing: 15px;
+      
+    }
+    h3{
+      font-size: 15px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-right: 70px;  
+    }
+    .slideInfo{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right: 70px;
+    }
+    .link{
+      margin-right: 20px;
+      font-size: 15px;
+    }
+    .btn, .btnCategory{
+      font-size: 16px;
+      padding: 10px;
+    }
+    .categoryContainer{
+      margin:3px;
+      height: 30vh;
+      
+    }
+    .categoryImage{
+      width: 100%;
+      height: 100%;
+    }
+    .categoryTitle{
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .newsInput{
+      font-size: 20px;
+    }
+    input{
+      font-size: 15px;
+    }
+    .aboutCont{
+      display: flex;
+      width: 750px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+    .aboutTitle{
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+     
+    }
+    .aboutText{
+      font-size: 14px;
+      margin: 10px;
+     
+
+    }
+    .down{
+      margin-bottom: 120px;
+      margin-top: 0px;
+    }
+
+    .selectedCategory{
+      font-size: 15px;
+    }
+    .notSelectedCategory{
+      font-size: 15px;
+      line-height: 0.01;
+    }
+    .footerIcon{
+      width: 20px;
+      height: 20px;
+    }
+    .footerText{
+      font-size: 13px;
+    }
+    .footertitle{
+      font-size: 18px;
+    }
+}
+@media all and (max-width:800px){
+  .slide{
+    width: 60%;
+    margin-top: 15px;
+    
+    }
+    h1{
+      font-size: 23px;
+      letter-spacing: 5px;
+      
+    }
+    h3{
+      font-size: 13px;
+      margin-right: 0px;  
+    }
+    .slideInfo{
+      margin-right: 20px;
+      width: 100%;
+    }
+    .btn, .btnCategory{
+      font-size: 13px;
+      padding: 5px;
+      letter-spacing: 3px;
+    }
+    .categoryContainer{
+      margin:5px;
+      height: 20vh;
+      width: 100vh;
+      position: relative;
+    }
+    .newsHeader{
+      font-size: 30px;
+    }
+    .newsInput{
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+    .inputContainer{
+      width: 90%;
+    }
+    input{
+     font-size: 13px;
+    }
+    .footerIcon{
+      width: 15px;
+      height: 15px;
+    }
+    .footerText{
+      font-size: 8px;
+      margin-left: 5px;
+    }
+    .footertitle{
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    .footerLink{
+      width: 15px;
+      height: 15px;
+      margin-right: 0;
+    }
+    .text{
+     font-size: 10px;
+      letter-spacing: 1px;
+    }
+    .aboutCont{
+      flex-direction: column;
+    }
+    .aboutContainer{
+      width: 360px;
+      border: 1px solid #0e8b8d;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      padding: 10px;
+      
+    }
+    .aboutImg{
+      width: 350px;
+    }
+  
+    .buttonsCont{
+      display:flex;
+      flex-direction: column;
+    }
+    .category{
+      flex-direction: column;
+    }
+    .productName, .price{
+      font-size: 15px;
+    }
+    .cartBtn{
+      font-size: 10px;
+      letter-spacing: 2px;
+      padding: 10px;
+     
+    }
+    .productAbout{
+      font-size: 15px;
+      width: 350px;
+      margin-left: 0px;
+    }
+    .bold, .showMore{
+      font-size: 15px;
+    }
+
 }
