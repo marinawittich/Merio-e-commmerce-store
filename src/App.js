@@ -25,17 +25,16 @@ function App() {
     
 <nav className="cont">
   <Link to="/Merio-e-commmerce-store/" className='homeLink'>Merio</Link>
-  <Link to="/cartItem" className='cart'>Cart</Link>
-  <Link to="/about" className='link'>About</Link>
-  <Link to="/shop" className='link'>Shop</Link>
-  <Link to="/ShoppingCart" className='link'><img src={cart} width='40' alt ='cart'/></Link>
+  <Link to="/Merio-e-commmerce-store/about" className='link'>About</Link>
+  <Link to="/Merio-e-commmerce-store/shop" className='link'>Shop</Link>
+  <Link to="/Merio-e-commmerce-store/ShoppingCart" className='link'><img src={cart} width='40' alt ='cart'/></Link>
 </nav>
 
 <Routes>
-  <Route path="/about" element={<About/>}/>
+  <Route path="/Merio-e-commmerce-store/about" element={<About/>}/>
   <Route path="/Merio-e-commmerce-store/" element={<Home/>}/>
-  <Route path="/shop" element={<Shop/>}/>
-  <Route path="/ShoppingCart" element={<ShoppingCart/>}/>
+  <Route path="/Merio-e-commmerce-store/shop" element={<Shop/>}/>
+  <Route path="/Merio-e-commmerce-store/ShoppingCart" element={<ShoppingCart/>}/>
 </Routes>
 </Router>
   
