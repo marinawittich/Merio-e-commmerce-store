@@ -22,7 +22,7 @@ const CartItem = ({cartItem, index}) => {
             
             <span onClick={() => {
                 dispatch(removeItemFromCart({cartItemId: cartItem.id}))
-            }}><img src={remove} width="30"/></span>
+            }}><img className="pointer" src={remove} width="30"/></span>
         </div>
         </div>
     )

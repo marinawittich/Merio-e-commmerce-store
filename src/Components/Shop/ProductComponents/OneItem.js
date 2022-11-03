@@ -6,6 +6,7 @@ import ChangeQuantity from "../../Cart/ChangeQuantity";
 
 
 const OneItem = ({item, index}) => {
+
     const dispatch = useDispatch()
     const [quantity, setQuantity] = useState(1)
     return(
