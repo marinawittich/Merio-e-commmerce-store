@@ -613,7 +613,7 @@ align-items: flex-start;
     }
     .aboutCont{
       flex-direction: column;
-      /* align-items: center; */
+      align-items: center;
     }
     .aboutContainer{
       width: 335px;
