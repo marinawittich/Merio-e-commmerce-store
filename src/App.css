@@ -614,9 +614,9 @@ align-items: flex-start;
     .aboutCont{
       flex-direction: column;
       align-items: center;
+      width: 95%;
     }
     .aboutContainer{
-      width: 335px;
       border: 1px solid #0e8b8d;
       border-radius: 10px;
       margin-bottom: 20px;
